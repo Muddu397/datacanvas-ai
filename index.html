@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DataCanvas AI — Autonomous Data Storyteller</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="brand-mark">◈</div>
+
+            <div>
+                <h1>DataCanvas AI</h1>
+                <p>Autonomous Data Storyteller</p>
+            </div>
+        </div>
+
+        <div class="agent-status">
+            <span class="status-dot"></span>
+            AUTONOMOUS AGENT
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="eyebrow">
+            ✦ YOUR DATA HAS SOMETHING TO SAY
+        </div>
+
+        <h2 id="story-title">
+            Discovering your next data story...
+        </h2>
+
+        <p id="story-theme" class="theme">
+            DataCanvas AI is analyzing the latest discovery.
+        </p>
+
+        <div class="generated">
+            <span>●</span>
+            <span id="generated-text">Waiting for agent output...</span>
+        </div>
+
+    </section>
+
+
+    <!-- KPI CARDS -->
+    <section class="kpi-grid">
+
+        <div class="kpi-card">
+            <span class="kpi-label">SALES GROWTH</span>
+            <strong id="sales-growth">—</strong>
+            <span class="kpi-sub">Compared with previous period</span>
+        </div>
+
+        <div class="kpi-card">
+            <span class="kpi-label">TOP REGION</span>
+            <strong id="top-region">—</strong>
+            <span class="kpi-sub" id="top-region-sales">—</span>
+        </div>
+
+        <div class="kpi-card">
+            <span class="kpi-label">TOP PRODUCT</span>
+            <strong id="top-product">—</strong>
+            <span class="kpi-sub" id="top-product-sales">—</span>
+        </div>
+
+        <div class="kpi-card">
+            <span class="kpi-label">DATA POINTS</span>
+            <strong id="data-points">—</strong>
+            <span class="kpi-sub">Records analyzed autonomously</span>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN GRID -->
+    <main class="content-grid">
+
+        <!-- SALES CHART -->
+        <section class="panel chart-panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <span class="section-label">SIGNAL</span>
+                    <h3>Sales Trend</h3>
+                </div>
+
+                <span class="period-label">LAST 14 DAYS</span>
+
+            </div>
+
+            <div class="chart-wrapper">
+                <svg id="sales-chart"
+                     viewBox="0 0 900 330"
+                     preserveAspectRatio="none">
+                </svg>
+            </div>
+
+            <div id="chart-labels" class="chart-labels"></div>
+
+        </section>
+
+
+        <!-- ANOMALY -->
+        <section class="panel anomaly-panel">
+
+            <div class="section-label">AI DETECTION</div>
+
+            <div class="anomaly-icon">!</div>
+
+            <h3>Anomaly Detected</h3>
+
+            <p class="anomaly-description">
+                DataCanvas identified an unusual pattern that deserves attention.
+            </p>
+
+            <div class="anomaly-details">
+
+                <div>
+                    <span>DATE</span>
+                    <strong id="anomaly-date">—</strong>
+                </div>
+
+                <div>
+                    <span>REGION</span>
+                    <strong id="anomaly-region">—</strong>
+                </div>
+
+                <div>
+                    <span>PRODUCT</span>
+                    <strong id="anomaly-product">—</strong>
+                </div>
+
+                <div>
+                    <span>Z-SCORE</span>
+                    <strong id="anomaly-zscore">—</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI DISCOVERY -->
+        <section class="panel story-panel">
+
+            <div class="section-label">AI DISCOVERY</div>
+
+            <h3>What the agent found</h3>
+
+            <p id="insight">
+                Loading the latest autonomous insight...
+            </p>
+
+        </section>
+
+
+        <!-- WHY IT MATTERS -->
+        <section class="panel story-panel">
+
+            <div class="section-label">WHY IT MATTERS</div>
+
+            <h3>Business context</h3>
+
+            <p id="why-it-matters">
+                Loading the agent's reasoning...
+            </p>
+
+        </section>
+
+
+        <!-- ACTION -->
+        <section class="panel action-panel">
+
+            <div class="section-label">RECOMMENDED ACTION</div>
+
+            <h3>What to do next</h3>
+
+            <p id="action">
+                Loading recommendation...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            <strong>DataCanvas AI</strong>
+            <span> • Autonomous Data Storytelling</span>
+        </div>
+
+        <div>
+            Powered by AWS Lambda + Amazon Bedrock
+        </div>
+
+    </footer>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
